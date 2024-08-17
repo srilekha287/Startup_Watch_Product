@@ -1,0 +1,169 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Container */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header */
+header {
+    background:url(watch_.jpg),transparent;
+    background-size: cover;
+    /* opacity: 0.7; */
+    color:  rgb(255, 255, 255);
+    padding: 20px 0;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.hero {
+    text-align: right;
+    padding: 100px 100px;
+  
+   
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 20px;
+    margin-bottom: 40px;
+}
+
+.btn {
+    padding: 10px 20px;
+    background: rgb(66, 182, 143);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.btn:hover {
+    background: rgb(66, 182, 143);
+}
+
+/* Features Section */
+img{
+    width:100%;
+    height:60%;
+}
+#features {
+    padding: 60px 0;
+    text-align: center;
+     background: #333;
+     color: white;
+}
+
+.features-grid {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    color: white;
+    /* background: #333; */
+}
+
+.feature {
+    /* background: #333; */
+    padding: 20px;
+    border-radius: 5px;
+    flex: 1;
+}
+
+/* Testimonials Section */
+#testimonials {
+    padding: 60px 0;
+    background: #000;
+    text-align: center;
+   
+}
+.container h2{
+    color: #fff;
+}
+
+.testimonials-grid {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.testimonial {
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    flex: 1;
+    color: #000;
+}
+
+/* Call to Action Section */
+#cta {
+    padding: 60px 0;
+    background: #333;
+    color: #fff;
+    text-align: center;
+}
+
+/* Footer */
+footer {
+    padding: 20px 0;
+    background: #222;
+    color: #fff;
+    text-align: center;
+}
+
+footer ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .features-grid,
+    .testimonials-grid {
+        flex-direction: column;
+    }
+}
+.fadeImage {
+    transition: opacity 0.5s ease-in-out;
+  }
+  .testimonial {
+    transition: opacity 0.3s ease-in-out;
+  }

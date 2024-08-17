@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Form </title>
+    <link rel="stylesheet" href="form_styles.css">
+</head>
+<body>
+    <div class="form-container">
+        <form id="loginForm" action="/submit" method="post">
+            <h2>Login/Sign up</h2>
+            <div class="form-group">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <div><button type="submit">Login/Sign in</button></div><br>
+        <div><button type="button"><a href=startup.html>Home</a></button></div>
+        </form>
+    </div>
+
+    <script>
+        document.getElementById('loginForm').addEventListener('submit', function(event) {
+            event.preventDefault(); 
+            alert('Successfully signed up/logged in');
+        });
+    </script>
+</body>
+</html>
